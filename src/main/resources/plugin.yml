@@ -1,0 +1,14 @@
+name: BroadcastVoice
+version: 1.0.0
+main: com.cylan.broadcastvoice.BroadcastVoicePlugin
+api-version: "26.2"
+depend: [voicechat, voicechat_broadcast]
+commands:
+  broadcastvoice:
+    description: Te une o te saca del canal broadcast
+    usage: /broadcastvoice
+    permission: broadcastvoice.use
+permissions:
+  broadcastvoice.use:
+    description: Permite usar /broadcastvoice
+    default: op

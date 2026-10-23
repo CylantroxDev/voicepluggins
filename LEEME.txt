@@ -1,0 +1,17 @@
+BroadcastVoice - guia rapida
+
+1) Instala JDK 25 (https://adoptium.net -> Temurin 25).
+2) Abre una terminal EN ESTA CARPETA (donde esta build.gradle).
+3) Windows:  gradlew.bat build        Mac/Linux:  ./gradlew build
+4) Tu plugin queda en:  build/libs/BroadcastVoice-1.0.0.jar
+5) Copialo a la carpeta plugins/ del servidor, junto a:
+   - Simple Voice Chat (plugin)
+   - voicechat_broadcast (plugin de henkelmax)
+6) Reinicia el servidor y usa /broadcastvoice dentro del juego.
+
+OPCION SIN INSTALAR NADA (GitHub compila por ti):
+1) Crea una cuenta en github.com y un repositorio nuevo (boton "New").
+2) Entra al repositorio y pulsa "uploading an existing file".
+3) Arrastra TODO el contenido de esta carpeta (incluida la carpeta oculta .github) y pulsa "Commit changes".
+4) Ve a la pestana "Actions", espera a que termine (palomita verde).
+5) Abre la ejecucion y descarga "BroadcastVoice-jar" abajo en "Artifacts". Dentro esta el .jar.

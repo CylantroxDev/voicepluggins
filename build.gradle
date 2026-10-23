@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.cylan.broadcastvoice'
+version = '1.0.0'
+
+repositories {
+    mavenCentral()
+    maven { url = 'https://repo.papermc.io/repository/maven-public/' }
+    maven { url = 'https://maven.maxhenkel.de/repository/public' }
+}
+
+dependencies {
+    compileOnly 'io.papermc.paper:paper-api:26.2.build.+'
+    compileOnly 'de.maxhenkel.voicechat:voicechat-api:2.+'
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.release = 25
+    options.encoding = 'UTF-8'
+}
